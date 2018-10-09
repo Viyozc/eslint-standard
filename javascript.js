@@ -1,6 +1,5 @@
 module.exports = {
   "extends": [
-    "eslint-config-alloy",
     "eslint:recommended",
     "plugin:import/errors",
     "plugin:import/warnings"
