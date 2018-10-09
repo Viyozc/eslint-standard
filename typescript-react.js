@@ -1,7 +1,9 @@
+const path = require('path');
+
 module.exports = {
   extends: [
-    './react.js',
-    './typescript.js'
+    path.resolve(__dirname, './react.js'),
+    path.resolve(__dirname, './typescript.js')
   ],
   rules: {
     //
