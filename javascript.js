@@ -32,7 +32,7 @@ module.exports = {
     "no-console": 1,
     "no-debugger": 1,
     "no-var": 2,
-    "no-unused-vars": 1,
+    "no-unused-vars": 2,
     "import/named": 0,
     "semi": [2, "always"],
     "eol-last": 0,
@@ -53,6 +53,7 @@ module.exports = {
     "no-multiple-empty-lines": [2, { "max": 1 }],
     "no-mixed-spaces-and-tabs": [2, false],
     "import/extensions": 1,
+    "import/no-unresolved": 0,
   },
   "globals": {
     "window": true,
