@@ -1,14 +1,12 @@
 const path = require('path');
 
-module.exports = (options) => {
-  let config = {
-    ...options
-  };
-  if (options.typescript && options.react) {
+module.exports = ({typescript, react, ...rest}) => {
+  let config = rest;
+  if (typescript && react) {
     config.extends = [path.resolve(__dirname, './typescript-react.js')];
-  } else if (option.typescript) {
+  } else if (typescript) {
     config.extends = [path.resolve(__dirname, './typescript.js')];
-  } else if (option.react) {
+  } else if (react) {
     config.extends = [path.resolve(__dirname, './react.js')];
   } else {
     config.extends = [path.resolve(__dirname, './javascript.js')];
