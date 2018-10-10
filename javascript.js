@@ -54,11 +54,14 @@ module.exports = {
     "no-mixed-spaces-and-tabs": [2, false],
     "import/extensions": 1,
     "import/no-unresolved": 0,
+    "no-callback-literal": 0,
+    "no-useless-escape": 0
   },
   "globals": {
     "window": true,
     "document": true,
     "sessionStorage": true,
-    "localStorage": true
+    "localStorage": true,
+    "process": true,
   }
 };

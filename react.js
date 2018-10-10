@@ -1,7 +1,10 @@
 
+const path = require('path');
+
 module.exports = () => { return {
   extends: [
-    './javascript.js',
+    "plugin:react/recommended",
+    path.resolve(__dirname, './javascript.js'),
   ],
   plugins: [
     'react'

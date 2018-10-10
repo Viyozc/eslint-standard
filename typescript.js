@@ -1,6 +1,8 @@
+const path = require('path');
+
 module.exports = {
   extends: [
-    './javascript.js'
+    path.resolve(__dirname, './javascript.js')
   ],
   parser: 'typescript-eslint-parser',
   plugins: [
