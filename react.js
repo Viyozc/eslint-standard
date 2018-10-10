@@ -1,7 +1,7 @@
 
 const path = require('path');
 
-module.exports = () => { return {
+module.exports = {
   extends: [
     "plugin:react/recommended",
     path.resolve(__dirname, './javascript.js'),
@@ -171,4 +171,4 @@ module.exports = () => { return {
     ],
     "react/jsx-wrap-multilines": 1
   }
-};};
+};
