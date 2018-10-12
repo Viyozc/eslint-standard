@@ -1,7 +1,7 @@
 const path = require('path');
 
-module.exports = (config) => {
-  let config = config || {};
+module.exports = (obj) => {
+  let config = obj || {};
   let {typescript, react} = config;
   config.extends = [path.resolve(__dirname, './react.js')];
   // if (typescript && react) {
